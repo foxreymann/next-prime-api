@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "is-prime": "^1.0.1",
     "koa": "^2.5.0"
   },
   "devDependencies": {},
