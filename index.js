@@ -6,8 +6,7 @@ const app = new Koa()
 app.use(async ctx => {
 
   const primeNumber = ctx.request.query.number
-//console.log(primeNumber)
-//console.log(nextPrime(primeNumber))
+
   const response = {
     next_prime_number: nextPrime(primeNumber)
   }
@@ -17,6 +16,7 @@ app.use(async ctx => {
 
 function nextPrime(primeNumber) {
   let testNumber = primeNumber
+
   while(true) {
     if(isPrime(++testNumber)) {
       return testNumber
